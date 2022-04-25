@@ -11,6 +11,7 @@ export async function getAllTestsOrderByTerms() {
           name: true,
           teachersDisciplines: {
             include: {
+              teachers: true,
               tests: {
                 include: {
                   categories: true,
